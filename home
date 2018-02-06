@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="cv" method="post" action="" id="cvform" class="edit" enctype="multipart/form-data" target="postframe"><div id="section-basic" class="section "><h2 class="title"><span class="name">Basic information</span></h2><div class="sets"><div class="set"><input type="hidden" class="action" name="action" value="cv" />
+<input type="hidden" class="email_copy" name="email_copy" value="" />
+<input type="hidden" class="style" name="style" value="executive" />
+<input type="hidden" class="type" name="type" value="pdf" />
+<input type="hidden" class="page_size" name="page_size" value="pdf" />
+<input type="hidden" class="section_name" name="sections[basic][section_name]" value="Basic information" />
+<p class="field field_"><label>Full name</label><input maxlength="100" type="text" name="sections[basic][data][fullname]" class="text" value="" />
+</p><p class="field field_"><label>E-mail address</label><input maxlength="100" type="text" name="sections[basic][data][email]" class="text" value="" />
+</p><p class="field field_"><label>Phone numbers</label><input maxlength="100" type="text" name="sections[basic][data][phone]" class="text" value="" />
+<span class="info">If you have more than one number, separate with commas</span></p><p class="field field_"><label>Websites</label><input maxlength="100" type="text" name="sections[basic][data][website]" class="text" value="" />
+<span class="info">If you have more than one URL, separate with commas</span></p><hr />
+<p class="field field_"><label>Address line 1</label><input maxlength="100" type="text" name="sections[basic][data][address1]" class="text" value="" />
+</p><p class="field field_"><label>Address line 2</label><input maxlength="100" type="text" name="sections[basic][data][address2]" class="text" value="" />
+</p><p class="field field_"><label>Address line 3</label><input maxlength="100" type="text" name="sections[basic][data][address3]" class="text" value="" />
+</p><hr />
+<p class="field field_photo"><label for="photo">Photo</label><input type="file" id="photo" name="photo" class="text" value="" />
+<span class="info">gif, jpg, png, jpeg<br />320 x 400 px</span></p><p class="field field_bt-photo"><input type="button" id="bt-photo" name="bt-photo" class="button" value="Upload" />
+</p><p class="field field_bt-photo-remove"><input type="button" id="bt-photo-remove" name="bt-photo-remove" class="button" value="Remove" />
+</p></div></div></div><div id="section-work" class="section addable renamable"><h2 class="title"><span class="name">Work experience</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[work][section_name]" value="Work experience" />
+<p class="field field_"><label>Job title</label><input maxlength="100" type="text" name="sections[work][data][job_title][]" class="text" value="" />
+</p><p class="field field_"><label>Company name</label><input maxlength="100" type="text" name="sections[work][data][company][]" class="text" value="" />
+</p><p class="field field_"><label>Start date</label><input maxlength="100" type="text" name="sections[work][data][start][]" class="text" value="" />
+<span class="info">Eg: Jan 2005</span></p><p class="field field_"><label>End date</label><input maxlength="100" type="text" name="sections[work][data][end][]" class="text" value="" />
+<span class="info">Eg: Jan 2009, or Present</span></p><p class="field field_"><label>Other information</label><textarea name="sections[work][data][info][]" class="textarea"></textarea>
+<span class="info">Optional details such as job responsibilities, achievements etc.</span></p><hr />
+</div></div></div><div id="section-qualifications" class="section renamable"><h2 class="title"><span class="name">Qualifications</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[qualifications][section_name]" value="Qualifications" />
+<p class="field field_"><label>Qualifications</label><textarea name="sections[qualifications][data][info][]" class="textarea"></textarea>
+<span class="info">Certifications, accreditions etc. that you have received</span></p><hr />
+</div></div></div><div id="section-education" class="section addable renamable"><h2 class="title"><span class="name">Education</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[education][section_name]" value="Education" />
+<p class="field field_"><label>Course name</label><input maxlength="100" type="text" name="sections[education][data][course][]" class="text" value="" />
+</p><p class="field field_"><label>Institution name</label><input maxlength="100" type="text" name="sections[education][data][school][]" class="text" value="" />
+</p><p class="field field_"><label>Start date</label><input maxlength="100" type="text" name="sections[education][data][start][]" class="text" value="" />
+<span class="info">Eg: Jan 2005</span></p><p class="field field_"><label>End date</label><input maxlength="100" type="text" name="sections[education][data][end][]" class="text" value="" />
+<span class="info">Eg: Jan 2009, or Present</span></p><p class="field field_"><label>Other information</label><textarea name="sections[education][data][info][]" class="textarea"></textarea>
+<span class="info">Optional details such as course description, marks etc.</span></p><hr />
+</div></div></div><div id="section-interests" class="section renamable"><h2 class="title"><span class="name">Interests</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[interests][section_name]" value="Interests" />
+<p class="field field_"><label>Interests</label><textarea name="sections[interests][data][info][]" class="textarea"></textarea>
+</p></div></div></div><div id="section-references" class="section renamable"><h2 class="title"><span class="name">References</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[references][section_name]" value="References" />
+<p class="field field_"><label>References</label><textarea name="sections[references][data][info][]" class="textarea">References available upon request.</textarea>
+</p></div></div></div><div id="section-new" class="section renamable invisible newsection"><h2 class="title"><span class="name">New section</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[new][section_name]" value="New section" />
+<p class="field field_"><label>New section</label><textarea name="sections[new][data][info][]" class="textarea"></textarea>
+</p></div></div></div><div id="section-special" class="section addable renamable invisible special"><h2 class="title"><span class="name">New section</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[new][section_name]" value="Title" />
+<p class="field field_"><label>Title</label><input maxlength="100" type="text" name="sections[new][data][title][]" class="text" value="" />
+</p><p class="field field_"><label>Subtitle</label><input maxlength="100" type="text" name="sections[new][data][subtitle][]" class="text" value="" />
+</p><p class="field field_"><label>Start date</label><input maxlength="100" type="text" name="sections[new][data][start][]" class="text" value="" />
+<span class="info">Eg: Jan 2005</span></p><p class="field field_"><label>End date</label><input maxlength="100" type="text" name="sections[new][data][end][]" class="text" value="" />
+<span class="info">Eg: Jan 2009, or Present</span></p><p class="field field_"><label>Other information</label><textarea name="sections[new][data][info][]" class="textarea"></textarea>
+<span class="info">Optional details such as course description, marks etc.</span></p><hr />
+</div></div></div></form>
+	<div class="clear"> </div>
+</div>
+
+<iframe id="postframe" name="postframe" src=""></iframe>
+
+<div id="photo-preview">
+</div>
+</body>
+</html>
